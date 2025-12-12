@@ -1,6 +1,5 @@
-# SPA-Navigation-Mapper-Tree-
-Capture SPA route navigation and show a parent→child tree based on actual clicks/navigation.
 # SPA Navigation Mapper (Chrome Extension)
+Capture SPA route navigation and show a parent→child tree based on actual clicks/navigation.
 
 A lightweight Chrome extension that maps navigation flows in **Single Page Applications (SPAs)** by recording real user transitions and rendering them as a nested tree.
 
