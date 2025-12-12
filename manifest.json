@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "SPA Navigation Mapper (Tree)",
+  "version": "1.0.0",
+  "description": "Capture SPA route navigation and show a parent→child tree based on actual clicks/navigation.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Sitemap Tree"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
